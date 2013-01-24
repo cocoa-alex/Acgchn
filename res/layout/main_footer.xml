@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_bar_bg_n"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/main_footer_news"
+        style="@style/main_footer_radio"
+        android:drawableTop="@drawable/widget_bar_news" />
+
+    <ImageView
+        style="@style/main_footbar_cutline"
+        android:contentDescription="@string/strDesc"
+        android:src="@drawable/widget_bar_cut_off" />
+
+    <RadioButton
+        android:id="@+id/main_footer_question"
+        style="@style/main_footer_radio"
+        android:drawableTop="@drawable/widget_bar_questions" />
+
+    <ImageView
+        style="@style/main_footbar_cutline"
+        android:contentDescription="@string/strDesc"
+        android:src="@drawable/widget_bar_cut_off" />
+
+    <RadioButton
+        android:id="@+id/main_footer_tweet"
+        style="@style/main_footer_radio"
+        android:drawableTop="@drawable/widget_bar_tweet" />
+
+    <ImageView
+        style="@style/main_footbar_cutline"
+        android:contentDescription="@string/strDesc"
+        android:src="@drawable/widget_bar_cut_off" />
+
+    <RadioButton
+        android:id="@+id/main_footbar_active"
+        style="@style/main_footer_radio"
+        android:drawableTop="@drawable/widget_bar_active" />
+
+    <ImageView
+        style="@style/main_footbar_cutline"
+        android:contentDescription="@string/strDesc"
+        android:src="@drawable/widget_bar_cut_off" />
+    <ImageView
+        android:id="@+id/main_footbar_more"
+        style="@style/main_footbar_image"
+        android:contentDescription="@string/strDesc"
+        android:src="@drawable/widget_bar_more"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Acgchn</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="settings">Settings</string>
+    <string name="heart">heart</string>
+    <string name="user">user</string>
+    <string name="edit">edit</string>
+    <string name="email">email</string>
+    <string name="star">star</string>
+    <string name="address">address</string>
+    <string name="sure">Sure</string>
+    <string name="cancle">Cancle</string>
+    <string name="exit">Did you want to exit the app?</string>
+    <string name="warning">Warning</string>
+    <string name="strDesc">image</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GreenDroid UI -->
+    <dimen name="gd_arrow_offset">5.0dp</dimen>
+    <dimen name="text_size_10">10.0dp</dimen>
+    <dimen name="space_1">1.0dp</dimen>
+    <dimen name="space_3">3.0dp</dimen>
+    <dimen name="text_space12">12.0dp</dimen>
+</resources>
