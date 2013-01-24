@@ -6,4 +6,7 @@
     <dimen name="space_1">1.0dp</dimen>
     <dimen name="space_3">3.0dp</dimen>
     <dimen name="text_space12">12.0dp</dimen>
+    <dimen name="text_space19">19.0dp</dimen>
+    
+    <dimen name="text_size_19">19.0dp</dimen>
 </resources>

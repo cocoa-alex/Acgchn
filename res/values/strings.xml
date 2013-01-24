@@ -16,5 +16,6 @@
     <string name="exit">Did you want to exit the app?</string>
     <string name="warning">Warning</string>
     <string name="strDesc">image</string>
+    <string name="strNews">资讯</string>
 
 </resources>

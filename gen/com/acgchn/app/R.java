@@ -26,6 +26,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int head_text=0x7f050001;
         public static final int white=0x7f050000;
     }
     public static final class dimen {
@@ -35,62 +36,68 @@ public final class R {
         public static final int space_1=0x7f060002;
         public static final int space_3=0x7f060003;
         public static final int text_size_10=0x7f060001;
+        public static final int text_size_19=0x7f060006;
         public static final int text_space12=0x7f060004;
+        public static final int text_space19=0x7f060005;
     }
     public static final class drawable {
         public static final int address=0x7f020000;
         public static final int edit=0x7f020001;
         public static final int email=0x7f020002;
-        public static final int gd_quick_action_arrow_up=0x7f020003;
-        public static final int gd_quick_action_bar_arrow_down=0x7f020004;
-        public static final int gd_quick_action_bar_background=0x7f020005;
-        public static final int gd_quick_action_bar_bottom_frame=0x7f020006;
-        public static final int gd_quick_action_bar_grip_left=0x7f020007;
-        public static final int gd_quick_action_bar_grip_right=0x7f020008;
-        public static final int gd_quick_action_bar_item=0x7f020009;
-        public static final int gd_quick_action_bar_item_normal=0x7f02000a;
-        public static final int gd_quick_action_bar_item_pressed=0x7f02000b;
-        public static final int gd_quick_action_bar_item_selected=0x7f02000c;
-        public static final int gd_quick_action_grid_bg=0x7f02000d;
-        public static final int gd_quick_action_grid_selector=0x7f02000e;
-        public static final int gd_quick_action_grid_selector_focused=0x7f02000f;
-        public static final int gd_quick_action_grid_selector_pressed=0x7f020010;
-        public static final int gd_quick_action_top_frame=0x7f020011;
-        public static final int heart=0x7f020012;
-        public static final int ic_launcher=0x7f020013;
-        public static final int ic_menu_exit=0x7f020014;
-        public static final int ic_menu_logout=0x7f020015;
-        public static final int ic_menu_myinfo=0x7f020016;
-        public static final int ic_menu_search=0x7f020017;
-        public static final int ic_menu_setting=0x7f020018;
-        public static final int ic_menu_software=0x7f020019;
-        public static final int settings=0x7f02001a;
-        public static final int star=0x7f02001b;
-        public static final int user=0x7f02001c;
-        public static final int widget_bar_active=0x7f02001d;
-        public static final int widget_bar_active_nor=0x7f02001e;
-        public static final int widget_bar_active_over=0x7f02001f;
-        public static final int widget_bar_bg=0x7f020020;
-        public static final int widget_bar_bg_n=0x7f020021;
-        public static final int widget_bar_bg_p=0x7f020022;
-        public static final int widget_bar_cut_off=0x7f020023;
-        public static final int widget_bar_more=0x7f020024;
-        public static final int widget_bar_more_nor=0x7f020025;
-        public static final int widget_bar_more_over=0x7f020026;
-        public static final int widget_bar_news=0x7f020027;
-        public static final int widget_bar_news_nor=0x7f020028;
-        public static final int widget_bar_news_over=0x7f020029;
-        public static final int widget_bar_question_nor=0x7f02002a;
-        public static final int widget_bar_question_over=0x7f02002b;
-        public static final int widget_bar_questions=0x7f02002c;
-        public static final int widget_bar_relation_add_n=0x7f02002d;
-        public static final int widget_bar_relation_add_p=0x7f02002e;
-        public static final int widget_bar_relation_del_n=0x7f02002f;
-        public static final int widget_bar_relation_del_p=0x7f020030;
-        public static final int widget_bar_tweet=0x7f020031;
-        public static final int widget_bar_tweet_nor=0x7f020032;
-        public static final int widget_bar_tweet_over=0x7f020033;
-        public static final int widget_head_bg=0x7f020034;
+        public static final int frame_logo_active=0x7f020003;
+        public static final int frame_logo_news=0x7f020004;
+        public static final int frame_logo_post=0x7f020005;
+        public static final int frame_logo_tweet=0x7f020006;
+        public static final int gd_quick_action_arrow_up=0x7f020007;
+        public static final int gd_quick_action_bar_arrow_down=0x7f020008;
+        public static final int gd_quick_action_bar_background=0x7f020009;
+        public static final int gd_quick_action_bar_bottom_frame=0x7f02000a;
+        public static final int gd_quick_action_bar_grip_left=0x7f02000b;
+        public static final int gd_quick_action_bar_grip_right=0x7f02000c;
+        public static final int gd_quick_action_bar_item=0x7f02000d;
+        public static final int gd_quick_action_bar_item_normal=0x7f02000e;
+        public static final int gd_quick_action_bar_item_pressed=0x7f02000f;
+        public static final int gd_quick_action_bar_item_selected=0x7f020010;
+        public static final int gd_quick_action_grid_bg=0x7f020011;
+        public static final int gd_quick_action_grid_selector=0x7f020012;
+        public static final int gd_quick_action_grid_selector_focused=0x7f020013;
+        public static final int gd_quick_action_grid_selector_pressed=0x7f020014;
+        public static final int gd_quick_action_top_frame=0x7f020015;
+        public static final int heart=0x7f020016;
+        public static final int ic_launcher=0x7f020017;
+        public static final int ic_menu_exit=0x7f020018;
+        public static final int ic_menu_logout=0x7f020019;
+        public static final int ic_menu_myinfo=0x7f02001a;
+        public static final int ic_menu_search=0x7f02001b;
+        public static final int ic_menu_setting=0x7f02001c;
+        public static final int ic_menu_software=0x7f02001d;
+        public static final int settings=0x7f02001e;
+        public static final int star=0x7f02001f;
+        public static final int user=0x7f020020;
+        public static final int widget_bar_active=0x7f020021;
+        public static final int widget_bar_active_nor=0x7f020022;
+        public static final int widget_bar_active_over=0x7f020023;
+        public static final int widget_bar_bg=0x7f020024;
+        public static final int widget_bar_bg_n=0x7f020025;
+        public static final int widget_bar_bg_p=0x7f020026;
+        public static final int widget_bar_cut_off=0x7f020027;
+        public static final int widget_bar_more=0x7f020028;
+        public static final int widget_bar_more_nor=0x7f020029;
+        public static final int widget_bar_more_over=0x7f02002a;
+        public static final int widget_bar_news=0x7f02002b;
+        public static final int widget_bar_news_nor=0x7f02002c;
+        public static final int widget_bar_news_over=0x7f02002d;
+        public static final int widget_bar_question_nor=0x7f02002e;
+        public static final int widget_bar_question_over=0x7f02002f;
+        public static final int widget_bar_questions=0x7f020030;
+        public static final int widget_bar_relation_add_n=0x7f020031;
+        public static final int widget_bar_relation_add_p=0x7f020032;
+        public static final int widget_bar_relation_del_n=0x7f020033;
+        public static final int widget_bar_relation_del_p=0x7f020034;
+        public static final int widget_bar_tweet=0x7f020035;
+        public static final int widget_bar_tweet_nor=0x7f020036;
+        public static final int widget_bar_tweet_over=0x7f020037;
+        public static final int widget_head_bg=0x7f020038;
     }
     public static final class id {
         public static final int gdi_arrow_down=0x7f0a0007;
@@ -106,9 +113,11 @@ public final class R {
         public static final int main_footer_news=0x7f0a0009;
         public static final int main_footer_question=0x7f0a000a;
         public static final int main_footer_tweet=0x7f0a000b;
+        public static final int main_head_logo=0x7f0a000f;
+        public static final int main_head_title=0x7f0a0010;
         public static final int main_header_relativelayout=0x7f0a000e;
         public static final int main_scrolllayout=0x7f0a0000;
-        public static final int menu_settings=0x7f0a000f;
+        public static final int menu_settings=0x7f0a0011;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -136,6 +145,7 @@ public final class R {
         public static final int settings=0x7f070003;
         public static final int star=0x7f070008;
         public static final int strDesc=0x7f07000e;
+        public static final int strNews=0x7f07000f;
         public static final int sure=0x7f07000a;
         public static final int user=0x7f070005;
         public static final int warning=0x7f07000d;
@@ -194,5 +204,8 @@ public final class R {
         public static final int main_footbar_cutline=0x7f080016;
         public static final int main_footbar_image=0x7f080015;
         public static final int main_footer_radio=0x7f080014;
+        /**  main title style 
+         */
+        public static final int main_head_title=0x7f080017;
     }
 }

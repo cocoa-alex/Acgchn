@@ -12,6 +12,7 @@ import android.content.DialogInterface;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -25,11 +26,33 @@ public class MainActivity extends Activity {
 	
 	private QuickActionWidget mGrid;
 	private ImageView mImageView;
+	
+	private RadioButton rbNews;
+	private RadioButton rbQuestion;
+	private RadioButton rbTweet;
+	private RadioButton rbActive;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		this.initQuickActionGrid();
+		this.initFootBar();
+	}
+	@Override
+	protected void onResume(){
+		super.onResume();
+		rbNews.setChecked(true);
+		rbQuestion.setChecked(false);
+		rbTweet.setChecked(false);
+		rbActive.setChecked(false);
+	}
+	private void initFootBar(){
+		rbNews=(RadioButton) findViewById(R.id.main_footer_news);
+		rbNews.setChecked(true);
+		rbQuestion=(RadioButton) findViewById(R.id.main_footer_news);
+		rbTweet=(RadioButton) findViewById(R.id.main_footer_news);
+		rbActive=(RadioButton) findViewById(R.id.main_footer_news);
 	}
 	//stop the old menu
 	@Override
@@ -119,5 +142,4 @@ public class MainActivity extends Activity {
 			}
 		}
 	};
-
 }
