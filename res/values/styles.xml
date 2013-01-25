@@ -139,4 +139,12 @@
         <item name="android:shadowRadius">1</item>
     </style>
 
+    <!-- frame button -->
+    <style name="frame_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/frame_button_text_light</item>
+        <item name="android:background">@drawable/frame_button_bg</item>
+    </style>
 </resources>

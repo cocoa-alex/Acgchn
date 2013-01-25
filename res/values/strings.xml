@@ -18,5 +18,11 @@
     <string name="strDesc">image</string>
     <string name="strNews">资讯</string>
     <string name="title_activity_start">StartActivity</string>
+    <string name="frame_title_new_news">最新资讯</string>
+    <string name="frame_title_new_blog">最新博客</string>
+    <string name="frame_title_new_recommend">推荐阅读</string>
+    <string name="frame_title_question_ask">最新提问</string>
+    <string name="frame_title_question_share">最新分享</string>
+    <string name="frame_title_quesion_job">最新求职</string>
 
 </resources>

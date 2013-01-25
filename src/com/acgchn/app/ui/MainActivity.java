@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
 	private static final int QUICKACTION_ADDRESS=0;
 	private static final int QUICKACTION_EDIT=1;

@@ -11,9 +11,9 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/frame_btn_new_news"
+            android:id="@+id/frame_btn_question_ask"
             style="@style/frame_button"
-            android:text="@string/frame_title_new_news" />
+            android:text="@string/frame_title_question_ask" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -22,9 +22,9 @@
             android:contentDescription="@string/strDesc" />
 
         <Button
-            android:id="@+id/frame_btn_new_blog"
+            android:id="@+id/frame_btn_question_share"
             style="@style/frame_button"
-            android:text="@string/frame_title_new_blog" />
+            android:text="@string/frame_title_question_share" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -33,9 +33,9 @@
             android:contentDescription="@string/strDesc" />
 
         <Button
-            android:id="@+id/frame_btn_new_recommend"
+            android:id="@+id/frame_btn_question_job"
             style="@style/frame_button"
-            android:text="@string/frame_title_new_recommend" />
+            android:text="@string/frame_title_quesion_job" />
 
         <ImageView
             android:layout_width="wrap_content"
