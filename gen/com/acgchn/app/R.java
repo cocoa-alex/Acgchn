@@ -73,31 +73,33 @@ public final class R {
         public static final int ic_menu_software=0x7f02001d;
         public static final int settings=0x7f02001e;
         public static final int star=0x7f02001f;
-        public static final int user=0x7f020020;
-        public static final int widget_bar_active=0x7f020021;
-        public static final int widget_bar_active_nor=0x7f020022;
-        public static final int widget_bar_active_over=0x7f020023;
-        public static final int widget_bar_bg=0x7f020024;
-        public static final int widget_bar_bg_n=0x7f020025;
-        public static final int widget_bar_bg_p=0x7f020026;
-        public static final int widget_bar_cut_off=0x7f020027;
-        public static final int widget_bar_more=0x7f020028;
-        public static final int widget_bar_more_nor=0x7f020029;
-        public static final int widget_bar_more_over=0x7f02002a;
-        public static final int widget_bar_news=0x7f02002b;
-        public static final int widget_bar_news_nor=0x7f02002c;
-        public static final int widget_bar_news_over=0x7f02002d;
-        public static final int widget_bar_question_nor=0x7f02002e;
-        public static final int widget_bar_question_over=0x7f02002f;
-        public static final int widget_bar_questions=0x7f020030;
-        public static final int widget_bar_relation_add_n=0x7f020031;
-        public static final int widget_bar_relation_add_p=0x7f020032;
-        public static final int widget_bar_relation_del_n=0x7f020033;
-        public static final int widget_bar_relation_del_p=0x7f020034;
-        public static final int widget_bar_tweet=0x7f020035;
-        public static final int widget_bar_tweet_nor=0x7f020036;
-        public static final int widget_bar_tweet_over=0x7f020037;
-        public static final int widget_head_bg=0x7f020038;
+        public static final int start_background=0x7f020020;
+        public static final int user=0x7f020021;
+        public static final int welcome=0x7f020022;
+        public static final int widget_bar_active=0x7f020023;
+        public static final int widget_bar_active_nor=0x7f020024;
+        public static final int widget_bar_active_over=0x7f020025;
+        public static final int widget_bar_bg=0x7f020026;
+        public static final int widget_bar_bg_n=0x7f020027;
+        public static final int widget_bar_bg_p=0x7f020028;
+        public static final int widget_bar_cut_off=0x7f020029;
+        public static final int widget_bar_more=0x7f02002a;
+        public static final int widget_bar_more_nor=0x7f02002b;
+        public static final int widget_bar_more_over=0x7f02002c;
+        public static final int widget_bar_news=0x7f02002d;
+        public static final int widget_bar_news_nor=0x7f02002e;
+        public static final int widget_bar_news_over=0x7f02002f;
+        public static final int widget_bar_question_nor=0x7f020030;
+        public static final int widget_bar_question_over=0x7f020031;
+        public static final int widget_bar_questions=0x7f020032;
+        public static final int widget_bar_relation_add_n=0x7f020033;
+        public static final int widget_bar_relation_add_p=0x7f020034;
+        public static final int widget_bar_relation_del_n=0x7f020035;
+        public static final int widget_bar_relation_del_p=0x7f020036;
+        public static final int widget_bar_tweet=0x7f020037;
+        public static final int widget_bar_tweet_nor=0x7f020038;
+        public static final int widget_bar_tweet_over=0x7f020039;
+        public static final int widget_head_bg=0x7f02003a;
     }
     public static final class id {
         public static final int gdi_arrow_down=0x7f0a0007;
@@ -121,13 +123,14 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int frame_news=0x7f030001;
-        public static final int gd_quick_action_bar=0x7f030002;
-        public static final int gd_quick_action_bar_item=0x7f030003;
-        public static final int gd_quick_action_grid=0x7f030004;
-        public static final int gd_quick_action_grid_item=0x7f030005;
-        public static final int main_footer=0x7f030006;
-        public static final int main_header=0x7f030007;
+        public static final int activity_start=0x7f030001;
+        public static final int frame_news=0x7f030002;
+        public static final int gd_quick_action_bar=0x7f030003;
+        public static final int gd_quick_action_bar_item=0x7f030004;
+        public static final int gd_quick_action_grid=0x7f030005;
+        public static final int gd_quick_action_grid_item=0x7f030006;
+        public static final int main_footer=0x7f030007;
+        public static final int main_header=0x7f030008;
     }
     public static final class menu {
         public static final int activity_main=0x7f090000;
@@ -147,6 +150,7 @@ public final class R {
         public static final int strDesc=0x7f07000e;
         public static final int strNews=0x7f07000f;
         public static final int sure=0x7f07000a;
+        public static final int title_activity_start=0x7f070010;
         public static final int user=0x7f070005;
         public static final int warning=0x7f07000d;
     }

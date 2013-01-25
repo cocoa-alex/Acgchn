@@ -19,6 +19,7 @@ import java.lang.ref.WeakReference;
 import java.util.List;
 
 import com.acgchn.app.R;
+
 import android.content.Context;
 import android.graphics.Rect;
 import android.view.LayoutInflater;
