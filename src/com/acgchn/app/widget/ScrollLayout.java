@@ -2,6 +2,7 @@ package com.acgchn.app.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -30,6 +31,7 @@ public class ScrollLayout extends ViewGroup {
 
 	public void setIsScroll(boolean b) {
 		this.isScroll = b;
+		Log.v(TAG, "setIsScroll");
 	}
 
 	public ScrollLayout(Context context, AttributeSet attrs) {
@@ -180,7 +182,6 @@ public class ScrollLayout extends ViewGroup {
 	// 判断滑动
 	@Override
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
-
 		final int action = ev.getAction();
 		if ((action == MotionEvent.ACTION_MOVE)
 				&& (mTouchState != TOUCH_STATE_REST)) {
@@ -190,6 +191,7 @@ public class ScrollLayout extends ViewGroup {
 		final float y = ev.getY();
 		switch (action) {
 		case MotionEvent.ACTION_MOVE:
+			Log.v("H", "Move");
 			final int xDiff = (int) Math.abs(mLastMotionX - x);
 			if (xDiff > mTouchSlop) {
 				mTouchState = TOUCH_STATE_SCROLLING;

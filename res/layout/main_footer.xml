@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/widget_bar_bg_n"
     android:gravity="center_vertical"
-    android:orientation="horizontal" >
+    android:orientation="horizontal"
+    android:id="@+id/main_footer_linearlayout" >
 
     <RadioButton
         android:id="@+id/main_footer_news"
