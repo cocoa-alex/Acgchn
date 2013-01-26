@@ -11,3 +11,7 @@ this is a demo for android,copy from osc
 AppManager.java 
 >
 主要是针对Activit进行操作！
+
+1月26日
+
+添加ScrollLayout 功能！
