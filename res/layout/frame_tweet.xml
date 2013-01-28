@@ -6,14 +6,14 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="35.0dip"
+        android:layout_height="35.0dp"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/frame_btn_question_ask"
+            android:id="@+id/frame_btn_tweet_new"
             style="@style/frame_button"
-            android:text="@string/frame_title_question_ask" />
+            android:text="@string/frame_title_tweet_new" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -22,9 +22,9 @@
             android:contentDescription="@string/strDesc" />
 
         <Button
-            android:id="@+id/frame_btn_question_share"
+            android:id="@+id/frame_btn_tweet_hot"
             style="@style/frame_button"
-            android:text="@string/frame_title_question_share" />
+            android:text="@string/frame_title_tweet_hot" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -33,9 +33,10 @@
             android:contentDescription="@string/strDesc" />
 
         <Button
-            android:id="@+id/frame_btn_question_job"
+            android:id="@+id/frame_btn_tweet_mine"
             style="@style/frame_button"
-            android:text="@string/frame_title_quesion_job" />
+            android:contentDescription="@string/strDesc"
+            android:text="@string/frame_title_tweet_mine" />
     </LinearLayout>
 
 </LinearLayout>

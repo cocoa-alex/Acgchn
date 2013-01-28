@@ -16,6 +16,8 @@
         <include layout="@layout/frame_news" />
         
         <include layout="@layout/frame_question" />
+        <include layout="@layout/frame_tweet"/>
+        <include layout="@layout/frame_active"/>"
     </com.acgchn.app.widget.ScrollLayout>
 
     <include layout="@layout/main_footer" />

@@ -28,7 +28,7 @@ import android.widget.Toast;
 
 public class MainActivity extends BaseActivity {
 
-	private static final String TAG="TEST";
+	private static final String TAG = "TEST";
 	private static final int QUICKACTION_ADDRESS = 0;
 	private static final int QUICKACTION_EDIT = 1;
 	private static final int QUICKACTION_EMAIL = 2;
@@ -37,11 +37,11 @@ public class MainActivity extends BaseActivity {
 	private static final int QUCIKACTION_USER = 5;
 
 	private QuickActionWidget mGrid;
-	private ImageView mImageView;//setting
+	private ImageView fbSetting;// setting
 
 	private ImageView mHeadLogo;
 	private TextView mHeadTitle;
-	
+
 	private RadioButton rbNews;
 	private RadioButton rbQuestion;
 	private RadioButton rbTweet;
@@ -54,14 +54,15 @@ public class MainActivity extends BaseActivity {
 	private int mCurSel;
 
 	private AppContext appContext;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		this.initQuickActionGrid();
+		this.initHeadView();
 		this.initFootBar();
 		this.initPageScroll();
-		this.initHeadView();
+		this.initQuickActionGrid();
 	}
 
 	/**
@@ -70,47 +71,57 @@ public class MainActivity extends BaseActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		if (mViewCount==0)mViewCount=2;
-		if (mCurSel==0&&rbNews.isChecked()) {
+		if (mViewCount == 0)
+			mViewCount = 4;
+		if (mCurSel == 0 && !rbNews.isChecked()) {
 			rbNews.setChecked(true);
 			rbQuestion.setChecked(false);
 			rbTweet.setChecked(false);
 			rbActive.setChecked(false);
 		}
-		Log.v(TAG, "onResume");
-		boolean a=true;
+		boolean a = true;
 		mScrollLayout.setIsScroll(a);
 	}
 
-	private void initHeadView(){
-		mHeadLogo=(ImageView)findViewById(R.id.main_head_logo);
-		mHeadTitle=(TextView)findViewById(R.id.main_head_title);
-		
+	/**
+	 * initialize head view
+	 */
+	private void initHeadView() {
+		mHeadLogo = (ImageView) findViewById(R.id.main_head_logo);
+		mHeadTitle = (TextView) findViewById(R.id.main_head_title);
+
 	}
+
+	/**
+	 * initialize Page Scroll
+	 */
 	private void initPageScroll() {
 		mScrollLayout = (ScrollLayout) findViewById(R.id.main_scrolllayout);
 
 		LinearLayout layout = (LinearLayout) findViewById(R.id.main_footer_linearlayout);
-		mHeadTitles=getResources().getStringArray(R.array.head_titles);
-		mViewCount=mScrollLayout.getChildCount();
-		
-		mButtons=new RadioButton[mViewCount];
+		mHeadTitles = getResources().getStringArray(R.array.head_titles);
+		mViewCount = mScrollLayout.getChildCount();
+
+		mButtons = new RadioButton[mViewCount];
 		for (int i = 0; i < mViewCount; i++) {
-			mButtons[i]=(RadioButton) layout.getChildAt(i*2);
+			mButtons[i] = (RadioButton) layout.getChildAt(i * 2);
 			mButtons[i].setTag(i);
 			mButtons[i].setChecked(false);
 			mButtons[i].setOnClickListener(new OnClickListener() {
-				
+
 				@Override
 				public void onClick(View v) {
-					int pos=(Integer)(v.getTag());
-					if (mCurSel==pos) {
+					int pos = (Integer) (v.getTag());
+					if (mCurSel == pos) {
 						switch (pos) {
 						case 0:
 							break;
 						case 1:
 							break;
-
+						case 2:
+							break;
+						case 3:
+							break;
 						default:
 							break;
 						}
@@ -119,45 +130,60 @@ public class MainActivity extends BaseActivity {
 				}
 			});
 		}
-		
-		mCurSel=0;
-		mButtons[mCurSel].setChecked(true);
-		mScrollLayout.SetOnViewChangeListener(new ScrollLayout.OnViewChangeListener() {
-			
-			@Override
-			public void OnViewChange(int view) {
-				switch (view) {
-				case 0:
-					break;
-				case 1:
-					break;
 
-				default:
-					break;
-				}
-				setCurPoint(view);
-			}
-		
-		});
-		
+		// set the first screen
+		mCurSel = 0;
+		mButtons[mCurSel].setChecked(true);
+		mScrollLayout
+				.SetOnViewChangeListener(new ScrollLayout.OnViewChangeListener() {
+
+					@Override
+					public void OnViewChange(int view) {
+						switch (view) {
+						case 0:
+							break;
+						case 1:
+							break;
+						case 2:
+							break;
+						case 3:
+							break;
+						default:
+							break;
+						}
+						setCurPoint(view);
+					}
+
+				});
+
 	}
 
-	private void setCurPoint(int index){
-		if (index<0||index>mViewCount-1||mCurSel==index)
+	/**
+	 * set the footer Point
+	 * 
+	 * @param index
+	 */
+	private void setCurPoint(int index) {
+		if (index < 0 || index > mViewCount - 1 || mCurSel == index)
 			return;
-		
+
 		mButtons[mCurSel].setChecked(false);
 		mButtons[index].setChecked(true);
 		mHeadTitle.setText(mHeadTitles[index]);
-		mCurSel=index;
-		if (index==0) {
+		mCurSel = index;
+		if (index == 0) {
 			mHeadLogo.setImageResource(R.drawable.frame_logo_news);
-		}else if (index==1) {
+		} else if (index == 1) {
 			mHeadLogo.setImageResource(R.drawable.frame_logo_post);
+		} else if (index == 2) {
+			mHeadLogo.setImageResource(R.drawable.frame_logo_tweet);
+		} else if (index == 3) {
+			mHeadLogo.setImageResource(R.drawable.frame_logo_active);
 		}
 	}
+
 	/**
-	 * init foot bar
+	 * initialze foot bar
 	 */
 	private void initFootBar() {
 		rbNews = (RadioButton) findViewById(R.id.main_footer_news);
@@ -165,6 +191,14 @@ public class MainActivity extends BaseActivity {
 		rbQuestion = (RadioButton) findViewById(R.id.main_footer_news);
 		rbTweet = (RadioButton) findViewById(R.id.main_footer_news);
 		rbActive = (RadioButton) findViewById(R.id.main_footer_news);
+		fbSetting = (ImageView) findViewById(R.id.main_footbar_more);
+
+		fbSetting.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				mGrid.show(fbSetting, true);
+			}
+		});
 	}
 
 	/**
@@ -183,8 +217,7 @@ public class MainActivity extends BaseActivity {
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		boolean flag = true;
 		if (keyCode == KeyEvent.KEYCODE_MENU) {
-			mImageView = (ImageView) findViewById(R.id.main_footbar_more);
-			mGrid.show(mImageView, true);
+			mGrid.show(fbSetting, true);
 		} else if (keyCode == KeyEvent.KEYCODE_BACK) {
 			ExitApp(this);
 		}
@@ -208,8 +241,7 @@ public class MainActivity extends BaseActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						dialog.dismiss();
-						android.os.Process.killProcess(android.os.Process
-								.myPid());
+						android.os.Process.killProcess(android.os.Process.myPid());
 					}
 				});
 		// set cancle
@@ -225,7 +257,7 @@ public class MainActivity extends BaseActivity {
 	}
 
 	/**
-	 * init the quickactiongrid
+	 * initialize the quickactiongrid
 	 */
 	private void initQuickActionGrid() {
 		mGrid = new QuickActionGrid(this);
