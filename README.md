@@ -15,3 +15,7 @@ AppManager.java
 1月26日
 
 添加ScrollLayout 功能！
+
+1月28日
+ScrollPage 功能增加完成！
+
